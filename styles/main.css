@@ -50,6 +50,32 @@ img{
   color: white;
 }
 
+.bg-blue {
+  background-color: #355C7D;
+}
 
+.bg-yellow {
+  background-color: #edaf02;
+}
 
+.bg-white {
+  background-color: white;
+}
 
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.btn-blue {
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  background-color: #355C7D;
+}
+
+.btn-blue:hover {
+  color: white;
+  background-color: #355C7D;
+  filter: brightness(90%);
+  transition: 0.3s;
+}

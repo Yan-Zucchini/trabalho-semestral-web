@@ -34,18 +34,18 @@ img{
   height: 20vh;
 }
 
-#screenshots .offcanvas-body div{
+.offcanvas-body div{
   width: 100%;
   height: 10vh;
 }
 
-#screenshots .offcanvas-body a{
+.offcanvas-body a{
   text-decoration: none;
   font-weight: bold;
   color: #355C7D
 }
 
-#screenshots .offcanvas-body div:hover{
+.offcanvas-body div:hover{
   background-color: #edaf02;
   color: white;
 }
@@ -78,4 +78,10 @@ img{
   background-color: #355C7D;
   filter: brightness(90%);
   transition: 0.3s;
+}
+
+#post .container img {
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
 }

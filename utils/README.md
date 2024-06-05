@@ -1,9 +1,9 @@
 # Páginas
 
-- [] index.html -> Página contendo vários Posts
+- [] posts.html -> Página contendo vários Posts
 - [] post.html -> Página de um Post
-- [] login.html -> Página de Login
-- [] register.html -> Página de Register
+- [X] login.html -> Página de Login
+- [X] register.html -> Página de Register
 - [] profile.html -> Página de Perfil
 - [] lives.html -> Página de visualização de Lives
 - [] live.html -> Página de assistir uma Live

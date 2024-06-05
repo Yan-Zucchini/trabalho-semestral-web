@@ -3,63 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LinkUp | Login</title>
+    <title>LinkUp | Screenshots</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">      
     <link rel="stylesheet" href="/styles/main.css">
   </head>
-  <body id="screenshots">
-
+  <body id="screenshots" class="bg-gray">
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="container-fluid ">
-        <button class="btn btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <i class="bi bi-list"></i>
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <i class="bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"></i>
+          <img src="img/LogoAmarela.svg" onclick="window.location.href = 'posts.html'" alt="" >
+        </div>
+        <button class="btn btn-yellow" onclick="window.location.href = 'login.html'">
+          Sair
         </button>
-        <img src="img/LogoAmarela.svg" alt="">
       </div>
     </nav>
 
     <!-- Menu Lateral -->
-    
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Seções</h5>
+        <h5 class="offcanvas-title" id="menuLabel">Seções</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-
-        <a href="post.html">
-          <div class="d-flex justify-content-center align-items-center">
-            Post
-          </div>
-        </a>
-
-        <a href="screenshots.html">
-          <div class="d-flex justify-content-center align-items-center">
-            Screenshots
-          </div>
-        </a>
-        
-        <a href="community.html">
-          <div class="d-flex justify-content-center align-items-center">
-            Community
-          </div>
-        </a>
-
-        <a href="live.html">
-          <div class="d-flex justify-content-center align-items-center">
-            Live
-          </div>
-        </a>
-
-
+        <div class="d-flex flex-column gap-2">
+          <a href="posts.html">Posts</a>
+          <a href="screenshots.html">Screenshots</a>
+          <a href="communities.html">Comunidades</a>
+          <a href="lives.html">Lives</a>
+        </div>
       </div>
     </div>
 
     <!-- Imagens -->
-
     <div class="container">
       <div class="row mb-2 mt-2">
         <div class="col-3 d-flex justify-content-center align-items-center">
@@ -108,9 +88,6 @@
           <img src="img/screenshots/cyberpunk.jpeg" alt="">
         </div>
       </div>
-      
     </div>
-    
-
   </body>
 </html>

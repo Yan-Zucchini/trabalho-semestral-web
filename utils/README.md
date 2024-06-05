@@ -7,6 +7,6 @@
 - [] profile.html -> Página de Perfil
 - [] lives.html -> Página de visualização de Lives
 - [] live.html -> Página de assistir uma Live
-- [] screenshots.html -> Página de screenshots de games
+- [X] screenshots.html -> Página de screenshots de games
 - [] communities.html -> Página de acesso à comunidades
 - [] community.html -> Página de uma comunidade

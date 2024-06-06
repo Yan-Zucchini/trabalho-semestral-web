@@ -4,7 +4,7 @@
 - [] post.html -> Página de um Post
 - [X] login.html -> Página de Login
 - [X] register.html -> Página de Register
-- [] profile.html -> Página de Perfil
+- [x] profile.html -> Página de Perfil
 - [] lives.html -> Página de visualização de Lives
 - [] live.html -> Página de assistir uma Live
 - [X] screenshots.html -> Página de screenshots de games

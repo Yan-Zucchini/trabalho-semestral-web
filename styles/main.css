@@ -117,6 +117,12 @@ a.text-blue:hover {
   height: 25vh;
 }
 
+#screenshots .container img:hover{
+  filter: brightness(85%);
+  transition: 0.4s ease-out;
+  cursor: pointer;
+}
+
 #post .container img {
   object-fit: cover;
   width: 100%;

@@ -39,5 +39,109 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-6">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title text-center">Perfil do Usuário</h5>
+              <div class="d-flex justify-content-center gap-3 py-3">
+                <img src="img/perfil.jpg" class="rounded-circle profile-img" alt="">
+                <div class="d-flex flex-column">
+                  <h5>Rafael Manfrim</h5>
+                  <strong>rafamanfrim</strong>
+                  <span>6 Posts Publicados</span>
+                  <span>3 Comunidades</span>
+                  <span>2 Lives</span>
+                  <span>5 Screenshots</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item border-0" role="presentation">
+              <button class="nav-link text-blue active border-0" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">Informações</button>
+            </li>
+            <li class="nav-item border-0" role="presentation">
+              <button class="nav-link text-blue border-0" id="change-password-tab" data-bs-toggle="tab" data-bs-target="#change-password" type="button" role="tab" aria-controls="change-password" aria-selected="false">Alterar a Senha</button>
+            </li>
+            <li class="nav-item border-0" role="presentation">
+              <button class="nav-link text-blue border-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Alterar sua foto</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+              <div class="card rounded-0 border-0 rounded-bottom">
+                <div class="card-body d-flex flex-column gap-3">
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="name-input">Nome</label>
+                    <input type="text" class="form-control" placeholder="Insira seu nome..." aria-label="Nome" aria-describedby="name-input" id="name-input" value="Rafael">
+                  </div>
+          
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="lastname-input">Sobrenome</label>
+                    <input type="text" class="form-control" placeholder="Insira seu sobrenome..." aria-label="Sobrenome" aria-describedby="lastname-input" id="lastname-input" value="Manfrim">
+                  </div>
+                  
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="user-input">Usuário</label>
+                    <input type="text" class="form-control" placeholder="Insira seu usuário..." aria-label="Username" aria-describedby="user-input" id="user-input" value="rafamanfrim">
+                  </div>
+          
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="email-input">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Insira seu e-mail..." aria-label="E-mail" aria-describedby="email-input" id="email-input" value="rafael.manfrim@aluno.ifsp.edu.br">
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center w-100">
+                    <button type="button" class="btn btn-blue w-100">Alterar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+              <div class="card rounded-0 border-0">
+                <div class="card-body d-flex flex-column gap-3">
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="old-password-input">Senha Antiga</label>
+                    <input type="password" class="form-control" placeholder="Insira sua senha antiga..." aria-label="Senha Antiga" aria-describedby="old-password-input" id="old-password-input">
+                  </div>
+                  
+                  <div class="input-group border-0 rounded-bottom">
+                    <label class="input-group-text w-25" for="password-input">Senha</label>
+                    <input type="password" class="form-control" placeholder="Insira sua senha..." aria-label="Senha" aria-describedby="password-input" id="password-input">
+                  </div>
+          
+                  <div class="input-group">
+                    <label class="input-group-text w-25" for="password-confirmation-input">Confirmação</label>
+                    <input type="password" class="form-control" placeholder="Insira a confirmação da sua senha..." aria-label="Confirme a Senha" aria-describedby="password-confirmation-input" id="password-confirmation-input">
+                  </div>
+          
+                  <div class="d-flex justify-content-center align-items-center w-100">
+                    <button type="button" class="btn btn-blue w-100">Alterar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="card rounded-0 border-0 rounded-bottom">
+                <div class="card-body d-flex flex-column gap-3">
+                  <div class="input-group">
+                    <input type="file" class="form-control" aria-label="Foto" aria-describedby="photo-input" id="photo-input">
+                  </div>
+          
+                  <div class="d-flex justify-content-center align-items-center w-100">
+                    <button type="button" class="btn btn-blue w-100">Alterar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

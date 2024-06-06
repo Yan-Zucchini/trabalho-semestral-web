@@ -122,3 +122,9 @@ a.text-blue:hover {
   width: 100%;
   height: 40vh;
 }
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

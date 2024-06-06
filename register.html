@@ -12,9 +12,19 @@
   <body id="register" class="bg-gray">
     <!-- Formulário Registro -->
     <div class="d-flex justify-content-center align-items-center vh-100">
-      <div class="w-25 bg-white p-4 d-flex flex-column justify-content-center align-items-center gap-3 rounded">
+      <div class="w-50 bg-white p-4 d-flex flex-column justify-content-center align-items-center gap-3 rounded">
         <div class="d-flex justify-content-center align-items-center mb-3">
           <img src="img/LogoAzul.svg" alt="" class="">
+        </div>
+
+        <div class="input-group">
+          <label class="input-group-text w-25" for="name-input">Nome</label>
+          <input type="text" class="form-control" placeholder="Insira seu nome..." aria-label="Nome" aria-describedby="name-input" id="name-input">
+        </div>
+
+        <div class="input-group">
+          <label class="input-group-text w-25" for="lastname-input">Sobrenome</label>
+          <input type="text" class="form-control" placeholder="Insira seu sobrenome..." aria-label="Sobrenome" aria-describedby="lastname-input" id="lastname-input">
         </div>
         
         <div class="input-group">
@@ -29,7 +39,12 @@
 
         <div class="input-group">
           <label class="input-group-text w-25" for="password-input">Senha</label>
-          <input type="password" class="form-control" placeholder="Insira sua senha..." aria-label="Username" aria-describedby="password-input" id="password-input">
+          <input type="password" class="form-control" placeholder="Insira sua senha..." aria-label="Senha" aria-describedby="password-input" id="password-input">
+        </div>
+
+        <div class="input-group">
+          <label class="input-group-text w-25" for="password-confirmation-input">Confirme a Senha</label>
+          <input type="password" class="form-control" placeholder="Insira a confirmação da sua senha..." aria-label="Confirme a Senha" aria-describedby="password-confirmation-input" id="password-confirmation-input">
         </div>
 
         <div class="d-flex justify-content-center align-items-center w-100">

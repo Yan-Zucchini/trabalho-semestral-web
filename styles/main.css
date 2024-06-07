@@ -134,3 +134,32 @@ a.text-blue:hover {
   height: 150px;
   object-fit: cover;
 }
+
+#communities .community-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+#communities .community-card:hover{
+  background-color: #dfdfdf;
+  transition: 0.3s ease-out;
+}
+
+#communities .community-card img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#communities .community-card .community-card-info strong {
+  display: block;
+  font-size: 18px;
+  color: #355C7D;
+}

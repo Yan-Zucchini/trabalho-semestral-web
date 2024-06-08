@@ -163,3 +163,85 @@ a.text-blue:hover {
   font-size: 18px;
   color: #355C7D;
 }
+
+#community .community-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-header img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#community .community-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#community .community-header-info strong {
+  font-size: 1.5rem;
+}
+
+#community .community-header-info span {
+  font-size: 1rem;
+  color: #666;
+}
+
+#community .community-message {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-message img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#community .community-message-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+#community .community-message-info strong {
+  font-size: 1.125rem;
+}
+
+#community .community-message-info span {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+#community .community-message-date {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: right;
+}
+
+#community .community-publish {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-publish input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

@@ -117,6 +117,12 @@ a.text-blue:hover {
   height: 25vh;
 }
 
+#screenshots .container img:hover{
+  filter: brightness(85%);
+  transition: 0.4s ease-out;
+  cursor: pointer;
+}
+
 #post .container img {
   object-fit: cover;
   width: 100%;
@@ -147,3 +153,113 @@ a.text-blue:hover {
   text-indent: 2em;
 }
 
+#communities .community-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+#communities .community-card:hover{
+  background-color: #dfdfdf;
+  transition: 0.3s ease-out;
+}
+
+#communities .community-card img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#communities .community-card .community-card-info strong {
+  display: block;
+  font-size: 18px;
+  color: #355C7D;
+}
+
+#community .community-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-header img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#community .community-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#community .community-header-info strong {
+  font-size: 1.5rem;
+}
+
+#community .community-header-info span {
+  font-size: 1rem;
+  color: #666;
+}
+
+#community .community-message {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-message img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#community .community-message-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+#community .community-message-info strong {
+  font-size: 1.125rem;
+}
+
+#community .community-message-info span {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+#community .community-message-date {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: right;
+}
+
+#community .community-publish {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#community .community-publish input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

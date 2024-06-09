@@ -123,6 +123,15 @@ a.text-blue:hover {
   cursor: pointer;
 }
 
+#posts .post-card {
+  cursor: pointer;
+}
+
+.post-card:hover .post-card-body {
+  background-color: #dfdfdf;
+  transition: 0.3s ease-out; 
+}
+
 #post .container img {
   object-fit: cover;
   width: 100%;
@@ -150,7 +159,20 @@ a.text-blue:hover {
 
 #post p{
   text-align: justify;
-  text-indent: 2em;
+}
+
+#post .comment-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+}
+
+#post .comment-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 #communities .community-card {

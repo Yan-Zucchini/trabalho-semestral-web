@@ -1,7 +1,7 @@
 # Páginas
 
-- [] posts.html -> Página contendo vários Posts
-- [] post.html -> Página de um Post
+- [X] posts.html -> Página contendo vários Posts
+- [X] post.html -> Página de um Post
 - [X] login.html -> Página de Login
 - [X] register.html -> Página de Register
 - [x] profile.html -> Página de Perfil

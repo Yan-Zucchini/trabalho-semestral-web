@@ -39,5 +39,68 @@
         </div>
       </div>
     </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" title="YouTube live stream" allowfullscreen></iframe>
+          </div>
+          <div class="card mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Lo-fi monstro para escutar jogando Red Dead Redemption 2</h5>
+              <p class="card-text">
+                Seja bem-vindo(a) à nossa live especial! Hoje vamos escutar uma trilha sonora única e relaxante: lo-fi. Prepare-se para explorar o Velho Oeste enquanto curte um som tranquilo que vai tornar sua jornada ainda mais inesquecível.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Chat</h5>
+              <div class="chat-container">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-send-message">
+                  <input type="text" id="chat-input" placeholder="Escreva uma mensagem..." onkeydown="handleKeyPress(event)">
+                  <button class="btn btn-blue" onclick="sendMessage()">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function sendMessage() {
+        const input = document.getElementById('chat-input');
+        const messages = document.getElementById('chat-messages');
+        const messageText = input.value.trim();
+
+        if (messageText !== '') {
+          const messageContainerElement = document.createElement('div');
+          const usernameElement = document.createElement('strong');
+          const messageElement = document.createElement('span')
+
+          usernameElement.textContent = "rafamanfrim"
+          messageContainerElement.appendChild(usernameElement)
+
+          messageElement.textContent = messageText;
+          messageContainerElement.appendChild(messageElement)
+
+          messages.appendChild(messageContainerElement);
+          input.value = '';
+          messages.scrollTop = messages.scrollHeight
+        }
+      }
+
+      function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+          sendMessage();
+        }
+      }
+    </script>
   </body>
 </html>

@@ -285,3 +285,38 @@ a.text-blue:hover {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-messages strong {
+  margin-right: 8px;
+}
+
+#live .chat-send-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ced4da;
+}
+
+#live .chat-send-message input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

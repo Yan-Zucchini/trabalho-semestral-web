@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkUp | Post</title>
+    <script defer="defer" src="LinkUp%20Post_arquivos/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="LinkUp%20Post_arquivos/bootstrap-icons.min.css">
+    <link href="LinkUp%20Post_arquivos/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">      
+    <link rel="stylesheet" href="LinkUp%20Post_arquivos/main.css">
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/img/favicon.svg" type="image/x-icon">
+
+  </head>
+  <body id="posts" class="bg-gray">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <i class="bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"></i>
+          <img src="LinkUp%20Post_arquivos/LogoAmarela.svg" onclick="window.location.href = 'posts.html'" alt="">
+        </div>
+        <button class="btn btn-yellow" onclick="window.location.href = 'login.html'">
+          Sair
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menu Lateral -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="menuLabel">Seções</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column gap-2">
+          <a href="http://127.0.0.1:5500/posts.html">Posts</a>
+          <a href="http://127.0.0.1:5500/screenshots.html">Screenshots</a>
+          <a href="http://127.0.0.1:5500/communities.html">Comunidades</a>
+          <a href="http://127.0.0.1:5500/lives.html">Lives</a>
+          <a href="http://127.0.0.1:5500/profile.html">Perfil</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post -->
+    <div class="container">
+      <div class="row gy-3 mt-3 d-flex">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <a href="http://127.0.0.1:5500/posts/post-red-dead.html" class="text-decoration-none">
+            <div class="card post-card">
+              <img src="LinkUp%20Post_arquivos/red-dead-redemption-2.jpg" class="card-img-top" alt="">
+              <div class="card-body post-card-body">
+                <p class="card-title fw-bold">MasterPower74</p>
+                <p class="card-text">Sabia dessa curiosidade sobre Red Dead Redemption 2?</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center text-decoration-none">
+          <a href="http://127.0.0.1:5500/posts/post-cyberpunk2077.html" class="text-decoration-none">
+            <div class="card post-card">
+              <img src="LinkUp%20Post_arquivos/cyberpunk-2077.png" class="card-img-top" alt="">
+              <div class="card-body post-card-body">
+                <p class="card-title fw-bold">JurandirPedeBença123</p>
+                <p class="card-text">Seria Cyberpunk-2077 o jogo mais superestimado da história?</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row gy-3 mt-3 mb-3">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <div class="card post-card">
+            <img src="LinkUp%20Post_arquivos/elden-ring.jpeg" class="card-img-top" alt="">
+            <div class="card-body post-card-body">
+              <p class="card-title fw-bold">ArchMan33</p>
+              <p class="card-text">O melhor jogo do ano de 2022 é mesmo tudo isso?</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <div class="card post-card">
+            <img src="LinkUp%20Post_arquivos/hollow-knight.jpg" class="card-img-top" alt="">
+            <div class="card-body post-card-body">
+              <p class="card-title fw-bold">GamerBoy1445</p>
+              <p class="card-text">Você sabia dessa região secreta em Hollow Knight?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        <div class="card post-card">
+          teste
+        </div>
+      </div>
+      
+    </div>
+    
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

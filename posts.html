@@ -91,7 +91,55 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div class="row mb-3 ">
+        <div class="col-12 d-flex align-items-center justify-content-center card">
+          <div class="bg-white w-100 d-flex align-items-center justify-content-center p-3 rounded-2">
+            <button type="button" class="btn btn-blue w-50 h-100" data-bs-toggle="modal" data-bs-target="#createPost">
+              Crie seu post
+            </button>
+          </div>
+        </div>
+      </div>
+      
     </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="createPost" tabindex="-1" aria-labelledby="createPostLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-blue text-white">
+            <h1 class="modal-title fs-5" id="createPostLabel">Crie seu post</h1>
+          </div>
+          <div class="modal-body">
+
+            <div class="input-group">
+              <input type="file" class="form-control" aria-label="Foto" aria-describedby="photo-input" id="photo-input">
+            </div>
+
+            <div class="input-group my-3">
+              <label class="input-group-text w-25" for="name-input">Título</label>
+              <input type="text" class="form-control" placeholder="Insira o título do post..." aria-label="Nome" aria-describedby="name-input" id="name-input">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text w-25">Conteúdo</span>
+              <textarea class="form-control" aria-label="Conteúdo" placeholder="Insira o conteúdo do post..."></textarea>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-blue">Criar Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     
   </body>
 </html>
